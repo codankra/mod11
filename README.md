@@ -1,7 +1,7 @@
 # mod11
 Determine if a number is divisible by 11, or its remainder (Without using / or % operators :)
 
-Currently only implemented for numbers between -999 and 999
+Currently only implemented for numbers between -9999 and 9999
 
 ## How it Works
 1. Take the absolute value of the input (removes negative if exists). --I might work on this more to get rid of the need for this step.--
