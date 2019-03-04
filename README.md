@@ -4,7 +4,7 @@ Determine if a number is divisible by 11, or its remainder and mod11 congruence 
 Currently only implemented for numbers between -999 and 999
 
 ## How it Works
-1. Make input positive. **
+1. Make input positive. *Keep track of if it was negative to start*
 2. If result is less than 11, all my work is done 
   - If result is less than 100, take digit2 - digit1.
   - If result is less than 1000, take digit3 + digit1 - digit2. 
