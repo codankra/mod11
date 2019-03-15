@@ -41,9 +41,16 @@ int main(int argc, char **argv) {
 	} else if (size == 3) {
 		rem = num[0] +  num[2] - num[1];
 	/*
-	} else if (size == 4){ // *ONLY CONSISTENTLY WORKS 1100-1199
-		rem = num[0] +  num[3] - num[1] - num[2];
+	//If size>3 then take remainder - 1*10^(size of input)
+	//or take mod of first 3 digits and then add with mod of other digits
+	} else if (size == 4){ // DO num
+		rem = 10*num[0] +  num[3] - 10*num[1] - num[2];
 	*/
+	/*5 digits: a + c + e - d - b */
+	/*6 digits:  d + b + f - a - c - e  */
+	/*7 digits: 1000*a + 100*c + 10*e + g - 100*b - 10*d - f */
+	/*8 digits:  d + b + f + h - a - c - e - g */
+
 	}else{
 		fprintf(stderr, 
 			"WARNING: invalid size of number: results might be inaccurate!!\n");
